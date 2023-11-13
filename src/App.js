@@ -1,0 +1,29 @@
+import { Fragment } from "react";
+import logo from "./logo.svg";
+import { Routes, Route } from "react-router-dom";
+import MainNav from "./Components/MainNav";
+import Signup from "./Components/Signup";
+import Login from "./Components/Login";
+import Homepage from "./pages/Homepage";
+import Aboutus from "./Components/Aboutus";
+import Contact from "./Components/Contact";
+import BlogCatergoryPage from "./pages/BlogCategoryPage";
+
+function App() {
+  return (
+    <Fragment>
+      <MainNav />;
+      <Routes>
+        <Route path="/home" element={<Homepage />} />
+        <Route path="/" element={<Homepage />} />
+        <Route path="/sign-up" element={<Signup />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/About-Us" element={<Aboutus />} />
+        <Route path="/Contact" element={<Contact />} />
+        <Route path="/blogs/:category" element={<BlogCatergoryPage />} />
+      </Routes>
+    </Fragment>
+  );
+}
+
+export default App;

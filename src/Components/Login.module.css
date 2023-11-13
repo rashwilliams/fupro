@@ -1,0 +1,29 @@
+.form {
+
+    margin-left: 100px;
+    margin-right: 100px;
+    padding-left: 100px;
+    padding-right: 100px;
+    border-radius: 10px;
+    margin-top: 30px;
+    width: 5px;
+    height:2px;
+    font-size: medium;
+}
+
+.button {
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 10px;
+    margin-top: 30px;
+}
+
+.container {
+    margin-left: 100px;
+    margin-right: 100px;
+    font-weight: 500;
+    padding-left: 100px;
+    padding-right: 100px; 
+}

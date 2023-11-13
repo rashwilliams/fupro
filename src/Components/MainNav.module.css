@@ -1,0 +1,30 @@
+.container {
+color: black;
+background-color: orange;
+justify-content: space-around;
+
+}
+
+.spaces {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+
+.contact {
+
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.Aboutus {
+
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.home {
+
+    margin-left: 5px;
+    margin-right: 5px;
+}
