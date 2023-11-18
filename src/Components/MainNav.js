@@ -15,6 +15,12 @@ const MainNav = () => {
         <NavLink to="/About-Us" className={styles.Aboutus}>
           About Us
         </NavLink>
+        <NavLink to="/Blogs" className={styles.Blogs}>
+          Blogs
+        </NavLink>
+        <NavLink to="/Vblogs" className={styles.vblogs}>
+          Vblogs
+        </NavLink>
         <NavLink to="/Contact" className={styles.contact}>
           Contact
         </NavLink>

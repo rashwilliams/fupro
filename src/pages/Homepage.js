@@ -1,13 +1,12 @@
-import React, { Fragment } from "react";
+import { Container } from "react-bootstrap";
 import Home from "../Components/Home.js";
-import Blogs from "../Components/Blogs.js";
+import styles from "../Components/Home.module.css";
 
 const HomePage = () => {
   return (
-    <Fragment>
+    <Container className={styles.homebody} fluid>
       <Home />
-      <Blogs />
-    </Fragment>
+    </Container>
   );
 };
 

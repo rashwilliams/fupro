@@ -1,5 +1,5 @@
 import React, { Fragment } from "react";
-import BlogCategory from "../Components/blogCategory/BlogCatgory";
+import BlogCategory from "../Components/blogCategory/BlogCategory";
 
 const BlogCatergoryPage = () => {
   return (

@@ -1,7 +1,9 @@
 import React from "react";
 import { Container, Col, Row } from "react-bootstrap";
 import { Fragment } from "react";
-import myImg from "../Assets/Images/myImg.png";
+import Rashidi from "../Assets/Images/Rashidi.jpeg";
+import Alaafin from "../Assets/Images/Alaafin.jpeg";
+import Wisdom from "../Assets/Images/Wisdom.jpeg";
 import styles from "./Aboutus.module.css";
 
 const Aboutus = () => {
@@ -45,29 +47,6 @@ const Aboutus = () => {
         </Col>
       </Container>
 
-      <Container className={styles.container2}>
-        <div>
-          <h1 className={styles.ptext4}>Founders</h1>
-        </div>
-        <Row>
-          <Col className={styles.col1}>
-            <h4>
-              William Rashidi led the conceptualization of Play and Write,
-              inviting other co-founders to share in the conceptualization and
-              catapult the initiative into life.
-            </h4>
-          </Col>
-
-          <Col className={styles.col2}>
-            <h4>
-              Ademilola Oluwo led the conceptualization of Play and Write,
-              inviting other co-founders to share in the conceptualization and
-              catapult the initiative into life.
-            </h4>
-          </Col>
-        </Row>
-      </Container>
-
       <Container className={styles.container3}>
         <div>
           <h1 className={styles.ptext5}>Focus</h1>
@@ -79,9 +58,15 @@ const Aboutus = () => {
                 <h2 classname={styles.ptext6}>Play</h2>
               </div>
               <h4>
-                Even as adults, play is important. Through Play, we bring
-                together our community to socialize, learn, inform and heal. Our
-                Play portofolio includes the annual West African Queer Camp.
+                Play is important. As a community battered by exclusion, avenues
+                to play can be a response for healing and affirmation. Through
+                Play, we bring together our community to socialize, learn,
+                inform and heal.We believe bringing our community together to
+                play is part of reclaiming spaces. The annual West African Queer
+                Camp is our flagship play event. Also in the pipeline is the
+                annual activits-community dialogue spaces, where activists
+                listen to community perspectives and use these opinions to
+                design and inform their interventions.
               </h4>
             </div>
           </Col>
@@ -96,9 +81,58 @@ const Aboutus = () => {
                 stigma, discrimination and exclusion. Using community
                 journalism, we inform and contribute to Nigeria's evolving
                 democracy to become inclusive and centered on human rights
-                principles.
+                principles. Our writings are not focused on a particular theme
+                but extends to loads of genres, that help to put our voices in
+                the social, political, cultural, religious, intellectual and
+                economic spaces.
               </h4>
             </div>
+          </Col>
+        </Row>
+      </Container>
+
+      <Container className={styles.container2}>
+        <div>
+          <h1 className={styles.ptext4}>People</h1>
+        </div>
+        <Row>
+          <Col className={styles.col1}>
+            <img src={Rashidi} className={styles.Rashidi}></img>
+            <h4>
+              William Rashidi led the conceptualization of Play and Write,
+              inviting other co-founders to share in the conceptualization and
+              catapult the initiative into life.Recently, Rashidi loves the
+              statement "the fraud that is called William Rashidi", where he was
+              accused of diverting community resources to his personal gains but
+              where the results shows his committment to building a vibrant
+              community in Delta State in the last 12years. Rashidi is the
+              founding director of Equality Triangle.
+            </h4>
+          </Col>
+
+          <Col className={styles.col2}>
+            <img src={Alaafin} className={styles.Alaafin}></img>
+            <h4>
+              Ademilola Adenuga Olowu popularly known as Alaafinofeko is a
+              social gatherer, erotic writer, journalist, film maker, screen
+              writer and Animator whose work speaks to the positivity of sexual
+              pleasure for minority men. As an Animator, he teaches young people
+              Animation as part of efforts to skills building..
+            </h4>
+          </Col>
+
+          <Col className={styles.col2}>
+            <img src={Wisdom} className={styles.Wisdom}></img>
+            <h4>
+              Enwukwe Maruoko Wisdom is a mathematician by profession, whose
+              passion and love for writing has driven him to pursue a career in
+              the literary realm. His interest in conversations combined with
+              his analytical skill inspired the birth of the series "Daring The
+              Unquestionable gods". A social space that fosters open dialogues
+              on topics often overlooked; ranging from arts/entertainment to
+              socio-political, providing a platform for expressive discourse,
+              heightened visibility and societal accountability.
+            </h4>
           </Col>
         </Row>
       </Container>

@@ -1,6 +1,19 @@
-body {
+.homebody {
 
-    background-color: dimgrey;
-    /* background: url("../Assets/Images/myImg.png") */
+    background: url("../Assets/Images/Playplay.jpeg") rgba(34, 34, 34, 0.7);
+    min-height: 100%;
+    background-size: cover;
+    background-blend-mode: multiply;
+    height: 100vh;
     
+}
+
+.home {
+    font-size: xx-large;
+    font-weight: bolder;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-top: 30px;
+    color: rgb(255, 255, 255);
+    font-display:inherit;
+    line-height: 50px;
 }

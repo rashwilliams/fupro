@@ -1,5 +1,6 @@
 import React, { Fragment } from "react";
 import { Card, Container } from "react-bootstrap";
+import BlogCategoryCard from "./UI/BlogCategoryCard";
 import styles from "./Blogs.module.css";
 
 const blogCategories = [
@@ -31,15 +32,10 @@ const Blogs = () => {
       <Container className={styles.container}>
         {blogCategories.map((cat) => {
           return (
-            <Card className={styles.card1}>
-              <Card.Body className={styles.card}>
-                <Card.Title>{cat.catetory}</Card.Title>
-
-                <Card.Text>{cat.description}</Card.Text>
-                <Card.Link href={`/blogs/${cat.catetory}`}>Read more</Card.Link>
-                <Card.Link href="#">Another Link</Card.Link>
-              </Card.Body>
-            </Card>
+            <BlogCategoryCard
+              catetory={cat.catetory}
+              description={cat.description}
+            />
           );
         })}
       </Container>
