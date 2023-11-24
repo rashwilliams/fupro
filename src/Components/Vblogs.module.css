@@ -1,0 +1,20 @@
+body {
+    background-color: blanchedalmond;
+}
+
+.container {
+    margin-top: 50px;
+    display:flex;
+    margin-left: 20px;
+    margin-right: 20px;
+   
+}
+.AA {
+    width: 200px;
+    height: 200px;
+}
+
+.formcontrol {
+
+    margin-top: 100px;
+}

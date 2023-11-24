@@ -9,7 +9,7 @@ const Home = () => {
 
   useEffect(() => {
     const aboutUs = [
-      "As we continue to challenge systems of oppression, it is important to remember to play. To heal is to play and to play is also a form of advocacy. As we continue our advocacy to dismantle systems of oppression and social injustice, we bring you a platform to play, learn, startegize, inform and heal. It is complementary to existing systems, which by extension aims to increase community participation in advocacy. As we love to say, Welcome to Play, Welcome to Rights (Write).",
+      "As we continue to challenge systems of oppression, it is important to remember to play. Often times, we suffer burn-out as advocates and as individuals where our lived realities are a mental and physical burden. Thus, to play is to address these mental and physical exhaustion. Play is a form of advocacy. As we continue our advocacy to dismantle systems of oppression and social injustice, we bring you a platform to play, learn, strategize, inform and heal. It is complementary to existing advocacy interventions, which by extension aims to increase community participation in advocacy. As we love to say, Welcome to Play, Welcome to Rights (Write).",
     ];
     const options = {
       strings: aboutUs,
@@ -27,11 +27,11 @@ const Home = () => {
     };
   }, []);
   return (
-    <Container>
+    <Container className={styles.container}>
       <Row>
         <Col lg={1}></Col>
         <Col lg={10}>
-          <Form.Control className="mt-5" placeholder="Search" />
+          {/* <Form.Control className="mt-5" placeholder="Search" /> */}
 
           <div className={styles.home}>
             <span ref={el} />

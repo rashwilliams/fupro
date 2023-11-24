@@ -12,8 +12,13 @@
     font-size: xx-large;
     font-weight: bolder;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    margin-top: 30px;
+    margin-top: 200px;
     color: rgb(255, 255, 255);
+    margin-bottom: 500px;
     font-display:inherit;
     line-height: 50px;
+}
+
+.container {
+    height: 100vh;
 }

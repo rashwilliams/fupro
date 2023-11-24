@@ -8,9 +8,15 @@ const Signup = () => {
     <>
       <Fragment>
         <Container className={styles.container4}>
-          <div>
-            <h1>Share With Us</h1>
-          </div>
+          <Row>
+            <Col></Col>
+            <Col>
+              <Button className={styles.button2} variant="secondary" size="lg">
+                Contact Us
+              </Button>
+            </Col>
+            <Col></Col>
+          </Row>
         </Container>
 
         <Container className={styles.container}>

@@ -9,18 +9,21 @@ import styles from "./Aboutus.module.css";
 const Aboutus = () => {
   return (
     <Fragment>
-      <Container className={styles.container}>
+      <Container className={styles.container} fluid>
         <Col>
           <div>
             <p className={styles.ptext1}>History</p>
             <h4>
-              Play and Write disrupts traditional advocacy processes using
-              community gatherings and informal writings to speak to issues of
-              discrimination, vulnerability and marginalization. It was
-              conceptualized from an informal gathering of minority men, tired
+              Conceptualized from an informal gathering of minority men, tired
               of the one-way approach and community fixation on health as the
               de-facto entry point into political, social and economic advocacy
-              processes.
+              processes.These informal gatherings allowed us to reflect on what
+              we want as a people and not necessarily as organizations. The
+              resouding theme for us was the need to have a space where learning
+              and play was synced. Thus, Play and Write disrupts traditional
+              advocacy processes using community gatherings and informal
+              writings to speak to issues of discrimination, vulnerability and
+              marginalization.
             </h4>
           </div>
         </Col>
@@ -47,7 +50,7 @@ const Aboutus = () => {
         </Col>
       </Container>
 
-      <Container className={styles.container3}>
+      <Container className={styles.container3} fluid>
         <div>
           <h1 className={styles.ptext5}>Focus</h1>
         </div>
@@ -91,7 +94,7 @@ const Aboutus = () => {
         </Row>
       </Container>
 
-      <Container className={styles.container2}>
+      <Container className={styles.container2} fluid>
         <div>
           <h1 className={styles.ptext4}>People</h1>
         </div>

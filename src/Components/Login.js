@@ -6,10 +6,16 @@ const Login = () => {
   return (
     <>
       <Fragment>
-        <Container className={styles.container5}>
-          <div>
-            <h1>Log In</h1>
-          </div>
+        <Container className={styles.container6}>
+          <Row>
+            <Col></Col>
+            <Col>
+              <Button className={styles.button2} variant="secondary" size="lg">
+                Log In
+              </Button>
+            </Col>
+            <Col></Col>
+          </Row>
         </Container>
         <Row>
           <Col></Col>

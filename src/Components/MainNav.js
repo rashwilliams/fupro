@@ -1,11 +1,11 @@
 import React from "react";
-import { Navbar, Container } from "react-bootstrap";
+import { Navbar, Container, Button } from "react-bootstrap";
 import styles from "./MainNav.module.css";
 import { NavLink } from "react-router-dom";
 
 const MainNav = () => {
   return (
-    <Navbar className={styles.container}>
+    <Navbar className={`${styles.container} fixed-top`}>
       <Container>
         <Navbar.Brand>Play & Write</Navbar.Brand>
         <Navbar.Toggle />
@@ -26,10 +26,16 @@ const MainNav = () => {
         </NavLink>
         <Navbar.Collapse className="justify-content-end">
           <Navbar.Text className={styles.spaces}>
-            <NavLink to="/login">Log-in</NavLink>
+            <NavLink className="btn btn-primary" to="/login">
+              Log-in
+            </NavLink>
+            {/* <Button bsStyle="primary">Log-In</Button> */}
           </Navbar.Text>
           <Navbar.Text className={styles.spaces}>
-            <NavLink to="/sign-up">Sign-up</NavLink>
+            <NavLink className="btn btn-primary" to="/sign-up">
+              Sign-up
+            </NavLink>
+            {/* <Button bsStyle="primary">Sign-Up</Button> */}
           </Navbar.Text>
         </Navbar.Collapse>
       </Container>

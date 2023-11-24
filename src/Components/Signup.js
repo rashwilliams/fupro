@@ -7,9 +7,18 @@ const Signup = () => {
     <>
       <Fragment>
         <Container className={styles.container6}>
-          <div>
-            <h1>Sign Up</h1>
-          </div>
+          <Row>
+            <Col></Col>
+            <Col>
+              {/* <div>
+                <h1>Sign Up</h1>
+              </div> */}
+              <Button className={styles.button2} variant="secondary" size="lg">
+                Sign Up
+              </Button>
+            </Col>
+            <Col></Col>
+          </Row>
         </Container>
 
         <Row>

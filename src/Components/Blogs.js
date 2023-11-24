@@ -1,5 +1,5 @@
 import React, { Fragment } from "react";
-import { Card, Container } from "react-bootstrap";
+import { Card, Container, Row, Col, Form } from "react-bootstrap";
 import BlogCategoryCard from "./UI/BlogCategoryCard";
 import styles from "./Blogs.module.css";
 
@@ -29,6 +29,19 @@ const blogCategories = [
 const Blogs = () => {
   return (
     <Fragment>
+      <Container>
+        <Row>
+          <Col lg={1}></Col>
+          <Col lg={10}>
+            <Form.Control
+              className={styles.formcontrol}
+              placeholder="Search blogs"
+            />
+          </Col>
+          <Col lg={1}></Col>
+        </Row>
+      </Container>
+
       <Container className={styles.container}>
         {blogCategories.map((cat) => {
           return (
