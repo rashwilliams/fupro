@@ -1,9 +1,29 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Navbar, Container, Button } from "react-bootstrap";
 import styles from "./MainNav.module.css";
 import { NavLink } from "react-router-dom";
+import { useSelector } from "react-redux";
+import { useGetCurrentUserMutation } from "../lib/apis/userApi";
+import { useLogoutUserMutation } from "../lib/apis/authApi";
 
 const MainNav = () => {
+  const [getCurrentUser, { data }] = useGetCurrentUserMutation();
+  const [logoutUser] = useLogoutUserMutation();
+
+  const { user } = useSelector((state) => state.userState);
+
+  useEffect(() => {
+    const getCurrentUserData = async () => {
+      await getCurrentUser();
+    };
+
+    getCurrentUserData();
+  }, [user, getCurrentUser]);
+
+  const onLogoutUser = () => {
+    logoutUser();
+  };
+
   return (
     <Navbar className={`${styles.container} fixed-top`}>
       <Container>
@@ -26,15 +46,28 @@ const MainNav = () => {
         </NavLink>
         <Navbar.Collapse className="justify-content-end">
           <Navbar.Text className={styles.spaces}>
-            <NavLink className="btn btn-primary" to="/login">
-              Log-in
-            </NavLink>
-            {/* <Button bsStyle="primary">Log-In</Button> */}
+            {!user && (
+              <NavLink className="btn btn-primary" to="/login">
+                Log-in
+              </NavLink>
+            )}
           </Navbar.Text>
           <Navbar.Text className={styles.spaces}>
-            <NavLink className="btn btn-primary" to="/sign-up">
-              Sign-up
-            </NavLink>
+            {!user && (
+              <NavLink className="btn btn-primary" to="/sign-up">
+                Sign-up
+              </NavLink>
+            )}
+
+            {user && (
+              <NavLink
+                className="btn btn-primary"
+                to="/sign-up"
+                onClick={onLogoutUser}
+              >
+                Logout
+              </NavLink>
+            )}
             {/* <Button bsStyle="primary">Sign-Up</Button> */}
           </Navbar.Text>
         </Navbar.Collapse>
